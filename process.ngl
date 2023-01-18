@@ -1,0 +1,18 @@
+ngless "1.5"
+import "samtools" version "1.0"
+
+input = paired('data/ERR478958_1.fastq.gz', 'data/ERR478958_2.fastq.gz')
+
+input = preprocess(input) using |r|:
+    r = substrim(r, min_quality=25)
+    if len(r) < 45:
+        discard
+
+contigs = assemble(input)
+write(contigs, ofile='contig.fa')
+
+mapped = map(input, fafile=contigs)
+
+write(samtools_sort(mapped),
+    ofile='output.sorted.bam')
+
