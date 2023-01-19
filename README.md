@@ -1,11 +1,17 @@
 # Metagenomics tutorial
 
-Do everything at once
+Full script:
 
 ```bash
 
 # Get the data
 bash get-data.sh
+
+# Create conda environment:
+
+mamba create -n metagenomics_tutorial python=3.9
+conda activate metagenomics_tutorial
+mamba install -c conda-forge -c bioconda ngless SemiBin
 
 # Run NGLess
 ngless -j8 process.ngl
@@ -15,9 +21,21 @@ SemiBin2 single_easy_bin -i contig.fa -b output.sorted.bam --environment human_g
 
 ```
 
-## Step 0: Get Data
+## Step -1: Get Data
 
 You can run `get-data.sh` command to retrieve the data, which will be put into a directory called `data/`
+
+## Step 0: Create conda environment and install NGLess/SemiBin:
+
+You can use [conda](https://docs.conda.io/) or its faster replacement,
+[mamba](https://mamba.readthedocs.io/) to install NGLess and SemiBin (on Linux
+or Mac OS X):
+
+```bash
+mamba create -n metagenomics_tutorial python=3.9
+conda activate metagenomics_tutorial
+mamba install -c conda-forge -c bioconda ngless SemiBin
+```
 
 ## Step 1: Run NGLess
 
