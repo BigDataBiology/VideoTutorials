@@ -64,7 +64,6 @@ Breaking it down:
 4. `--environment human_gut`: use the prebuilt model for the human gut
 5. `--output semibin.out`: set the output directory
 6. `-p4`: use 4 threads
-```
 
 ## References
 
