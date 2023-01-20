@@ -1,5 +1,22 @@
 # Metagenomics tutorial
 
+## Videos
+
+### First half (NGLess)
+
+- English: https://youtu.be/EIkmZ8kN6j0
+- Portuguese: https://youtu.be/6PQ1YFEXpfc
+- German: https://youtu.be/iJ8ffOC-9_g
+- French: https://youtu.be/dQDInl-oiBY
+
+
+### Second half (SemiBin)
+
+- English: https://youtu.be/W5_-tjUWbCY
+- Portuguese: https://youtu.be/prbcM8KtKf8
+- French: https://youtu.be/zhhYHxlfYl0
+- German: https://youtu.be/LEpLamfmcj8
+
 Full script:
 
 ```bash
