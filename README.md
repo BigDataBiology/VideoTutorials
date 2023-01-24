@@ -8,5 +8,8 @@ Shows how to use [NGLess](https://ngless.embl.de) and [SemiBin](https://semibin.
 
 Available in 4 languages.
 
+## 2. GMGCv1 MAGs
+
+How to retrieve MAGs from the [GMGCv1](https://gmgc.embl.de) (Global Microbial Gene Catalog, version 1) dataset.
 
 
