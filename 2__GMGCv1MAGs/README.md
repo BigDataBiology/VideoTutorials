@@ -1,4 +1,6 @@
-# Retrieving MAGs (metagenome-assembled genomes) from GMGCv1
+# Retrieving MAGs (metagenome-assembled genomes) from GMGCv1 using Python
+
+Video: https://youtu.be/OHrm_uDsIm4
 
 [GMGCv1](https://gmgc.embl.de) (Global Microbial Gene Catalog, version 1) also includes MAGs (metagenome-assembled genomes) for its habitats. Because this work predates [SemiBin](https://semibin.rtfd.io/), this was still done using [MetaBAT2](https://peerj.com/articles/7359/) (which, to be clear, is pretty good, but it's now outperformed by newer alternatives).
 
