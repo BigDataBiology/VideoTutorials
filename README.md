@@ -12,4 +12,6 @@ Available in 4 languages.
 
 How to retrieve MAGs from the [GMGCv1](https://gmgc.embl.de) (Global Microbial Gene Catalog, version 1) dataset.
 
+## 3. Macrel
 
+How to run [macrel](https://macrel.readthedocs.io/en/latest/) on a metagenome.
