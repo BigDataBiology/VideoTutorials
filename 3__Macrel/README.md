@@ -1,5 +1,7 @@
 # Using Macrel on the command line for metagenomics
 
+Video link: https://youtu.be/dq501NLLpAc
+
 This is quite a trivial one-step tutorial: install the software and run the one-step tool.
 
 ## Step 0: install macrel using mamba
