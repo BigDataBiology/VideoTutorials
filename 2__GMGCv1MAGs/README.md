@@ -34,12 +34,12 @@ cd GMGC10.data
 
 This is a [git-annex](https://git-annex.branchable.com/) repository, which builds on top of `git` to add better support for (very) large files.
 
-As with git, `git-annex` is very flexible and powerful, but you can a lot done if you know 1% of it. In particular, here, we will use the `git-annex get` subcommand which retrieves individual files (and also checks the hash to ensure that they are correct).
+As with git, `git-annex` is very flexible and powerful, but you can get a lot done if you know 1% of it. In particular, here, we will use the `git-annex get` subcommand which retrieves individual files (and also checks the hash to ensure that they are correct).
 
 We will retrieve two files:
 
 1. The genome bins annotation table
-2. THe sample metadata
+2. The sample metadata
 
 ```bash
 git-annex get GMBC10.meta.tsv # Genome bins
@@ -50,7 +50,7 @@ GMBC stands for Global Microbial Bins Catalogue. We prefer to call the larger da
 
 ## Step 2: Retrieve the metadata
 
-First, we import `pandas` and load the two metadata tables:
+Now, we will work in Python to select the right bins from the metadata tables. First, we import `pandas` and load the two metadata tables:
 
 ```python
 import pandas as pd
@@ -61,7 +61,7 @@ meta = pd.read_table('./metadata/GMGC10.sample.meta.tsv.gz',
 
 ```
 
-We need to use the `original_name` as the index column. Some samples in GMGCv1 have two names: the European Nucleotide Archive (ENA) sample identifier (which is public) and, in some instances, an internal name (because the project started when the samples were not yet publicly-available).
+We need to use `original_name` as the index column. Some samples in GMGCv1 have two names: the European Nucleotide Archive (ENA) sample identifier (which is public) and, in some instances, an internal name (because the project started when the samples were not yet publicly-available).
 
 Bins in GMBC also have two names: (i) a normalized identifier (_e.g._., `GMBC10.003_239`, where the lower numbers correspond to higher quality bins), and (ii) an internal name (_e.g._, `SRS064937.bin.20`, where `SRS064937` is the sample identifier).
 
@@ -80,7 +80,7 @@ dog_bins = bins.query('habitat == "dog gut"') \
 fusos = dog_bins[dog_bins['GTDB_tk'].str.contains('p__Fusobacteriota')]
 ```
 
-Now, we retrieve the FASTA files. What you need to know is that individual FASTA failes are available at `https://gmgc.embl.de/api/v1.0/genome_bin/{bin_id}/fasta` (where `{bin_id}` is the identifier for the bin of interest). So, we just need to put everything together and use [requests](https://requests.readthedocs.io/):
+Now, we retrieve the FASTA files. What you need to know is that individual FASTA failes are available at `https://gmgc.embl.de/api/v1.0/genome_bin/{bin_id}/fasta` (where `{bin_id}` is the identifier for the bin of interest). So, we just need to put everything together and use [requests](https://requests.readthedocs.io/) to retrieve the actual sequences:
 
 ```python
 import requests
