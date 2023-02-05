@@ -1,0 +1,15 @@
+ngless "1.5"
+import "samtools" version "1.0"
+import "parallel" version "1.1"
+
+input = run_for_all_samples(load_sample_list('samples.yaml'))
+
+input = preprocess(input) using |r|:
+    r = substrim(r, min_quality=25)
+    if len(r) < 45:
+        discard
+
+mapped = map(input, fafile='multi_sample_binning/concatenated.fa')
+
+write(samtools_sort(mapped),
+    ofile='concat_output_' + input.name() + '.sorted.bam')

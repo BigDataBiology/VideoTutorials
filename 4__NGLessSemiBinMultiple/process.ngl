@@ -1,0 +1,19 @@
+ngless "1.5"
+import "samtools" version "1.0"
+import "parallel" version "1.1"
+
+samples = load_sample_list('samples.yaml')
+input = run_for_all_samples(samples)
+
+input = preprocess(input) using |r|:
+    r = substrim(r, min_quality=25)
+    if len(r) < 45:
+        discard
+
+contigs = assemble(input)
+write(contigs, ofile='contigs_' + input.name() + '.fa')
+
+mapped = map(input, fafile=contigs)
+
+write(samtools_sort(mapped),
+    ofile='output_' + input.name() + '.sorted.bam')

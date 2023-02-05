@@ -1,0 +1,15 @@
+basedir: data.multi/
+samples:
+  SAMEA4817893:
+    - paired:
+        - SAMEA4817893/ERR2726404_1.fastq.gz
+        - SAMEA4817893/ERR2726404_2.fastq.gz
+  SAMEA4817894:
+    - paired:
+        - SAMEA4817894/ERR2726405_1.fastq.gz
+        - SAMEA4817894/ERR2726405_2.fastq.gz
+  SAMEA4817895:
+    - paired:
+        - SAMEA4817895/ERR2726406_1.fastq.gz
+        - SAMEA4817895/ERR2726406_2.fastq.gz
+
