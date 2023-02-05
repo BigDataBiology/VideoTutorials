@@ -1,4 +1,4 @@
-# Metagenomics tutorial
+# Metagenomics tutorial using NGLess & SemiBin
 
 ## Videos
 
@@ -56,7 +56,13 @@ mamba install -c conda-forge -c bioconda ngless SemiBin
 
 ## Step 1: Run NGLess
 
-The file `process.ngl` is used to process the data.
+The file `process.ngl` is used to process the data. You can just run
+
+```bash
+ngless -j8 process.ngl
+```
+
+The argument `-j8` tells NGLess to use 8 threads. Adapt if needed.
 
 ## Step 2: Run SemiBin2
 
