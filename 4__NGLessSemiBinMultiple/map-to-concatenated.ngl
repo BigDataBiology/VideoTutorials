@@ -9,7 +9,7 @@ input = preprocess(input) using |r|:
     if len(r) < 45:
         discard
 
-mapped = map(input, fafile='multi_sample_binning/concatenated.fa')
+mapped = map(input, fafile='semibin.out.multi/concatenated.fa')
 
 write(samtools_sort(mapped),
     ofile='concat_output_' + input.name() + '.sorted.bam')
