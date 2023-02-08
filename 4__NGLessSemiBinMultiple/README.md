@@ -1,8 +1,19 @@
 # Metagenomics tutorial using NGLess & SemiBin (multiple samples)
 
-These assume that you have seen the first two halves:
+## Videos
+
+- Full playlist: https://www.youtube.com/playlist?list=PLn-ZqA9cHNdSsmVTojYL1lEcfh-J3Hdff
+
+1. [Assembly with NGLess (single sample)](https://youtu.be/EIkmZ8kN6j0)
+2. [Binning with SemiBin (single sample)](https://youtu.be/W5_-tjUWbCY)
+3. [Assembly with NGLess (multiple samples)](https://youtu.be/b6l48ETb-6k)
+4. [Binning with SemiBin (multiple samples)](https://youtu.be/-77jy-ShEVk)
+
+## Scripts
 
 Full script:
+
+Unlike in the video, we create a single conda environment with both [NGLess](https://ngless.embl.de) and [SemiBin](https://semibin.rtfd.io/).
 
 ```bash
 
