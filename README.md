@@ -15,3 +15,15 @@ How to retrieve MAGs from the [GMGCv1](https://gmgc.embl.de) (Global Microbial G
 ## 3. Macrel
 
 How to run [macrel](https://macrel.readthedocs.io/en/latest/) on a metagenome.
+
+## 4. Metagenomics tutorial using NGLess & SemiBin (multiple samples)
+
+Shows how to use [NGLess](https://ngless.embl.de) and
+[SemiBin](https://semibin.rtfd.io/) to build MAGs using multiple metagenomes.
+This likely makes the most sense if you've seen the first tutorial.
+
+## 5. Selecting interesting rows from a very large file with Pandas
+
+Motivated by a subscriber question about GMGCv1, this is actually a general
+question about using pandas and Python to deal with very huge tables.
+
