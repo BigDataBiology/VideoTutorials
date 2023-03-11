@@ -80,6 +80,12 @@ dog_bins = bins.query('habitat == "dog gut"') \
 fusos = dog_bins[dog_bins['GTDB_tk'].str.contains('p__Fusobacteriota')]
 ```
 
+In this case, we were selecting _Fusobacteriota_ at the phylum level (`p__Fusobacteriota`). If you wanted to select, for example, _E. coli_ MAGs (which is a species-level classification), you could use the following:
+
+```python
+ecolis = dog_bins[dog_bins['GTDB_tk'].str.contains('s__Escherichia coli')]
+```
+
 Now, we retrieve the FASTA files. What you need to know is that individual FASTA failes are available at `https://gmgc.embl.de/api/v1.0/genome_bin/{bin_id}/fasta` (where `{bin_id}` is the identifier for the bin of interest). So, we just need to put everything together and use [requests](https://requests.readthedocs.io/) to retrieve the actual sequences:
 
 ```python
