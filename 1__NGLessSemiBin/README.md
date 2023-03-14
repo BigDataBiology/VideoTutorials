@@ -53,6 +53,7 @@ mamba create -n metagenomics_tutorial python=3.9
 conda activate metagenomics_tutorial
 mamba install -c conda-forge -c bioconda ngless SemiBin
 ```
+If you are using Windows, you can use the [Windows Linux Subsystem](https://learn.microsoft.com/en-us/windows/wsl/) and run the above commands. You can download WSL [here](https://www.youtube.com/watch?v=wjbbl0TTMeo&t=629s).
 
 ## Step 1: Run NGLess
 
