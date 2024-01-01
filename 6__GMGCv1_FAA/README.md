@@ -1,5 +1,10 @@
 # How to obtain amino acids version of GMGCv1 subcatalogs
 
+A subscriber question about GMGCv1, namely how to get amino acid versions of
+the subcatalogs (_e.g._, the _human gut subcatalog_). We only provide
+nucleotide versions for disk space reasons, but it's pretty easy to generate
+amino acid ones and here we show how.
+
 ## Step 0: install software & get data
 
 As usual, we are going to set up a [conda](https://conda.io/) environment for our work
