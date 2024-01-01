@@ -1,5 +1,7 @@
 # Selecting interesting rows from a very large file with Pandas
 
+Video: [https://youtu.be/DbxAWfInXvo](https://youtu.be/DbxAWfInXvo)
+
 This is a general pattern for filtering very large tables with Pandas, but we are motivated by using GMGCv1.
 
 In particular, we will select the abundance for antibiotic resistance genes (ARGs). The high-level process is:

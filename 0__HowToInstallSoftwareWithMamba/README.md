@@ -1,5 +1,6 @@
 # How to install software with mamba
 
+Video: [https://youtu.be/GEZn3fsrSdE](https://youtu.be/GEZn3fsrSdE)
 
 Download mambaforge. You can find the right version at [https://github.com/conda-forge/miniforge#mambaforge](https://github.com/conda-forge/miniforge#mambaforge):
 

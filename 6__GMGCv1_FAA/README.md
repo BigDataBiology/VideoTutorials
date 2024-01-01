@@ -1,5 +1,7 @@
 # How to obtain amino acids version of GMGCv1 subcatalogs
 
+Video: [https://youtu.be/xjYBFphJ0bk](https://youtu.be/xjYBFphJ0bk)
+
 A subscriber question about GMGCv1, namely how to get amino acid versions of
 the subcatalogs (_e.g._, the _human gut subcatalog_). We only provide
 nucleotide versions for disk space reasons, but it's pretty easy to generate

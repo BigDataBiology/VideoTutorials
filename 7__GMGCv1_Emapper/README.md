@@ -1,5 +1,7 @@
 # How to eggnog-mapper annotations for genes in the GMGC
 
+Video: [https://youtu.be/WrTxNm3xdYM](https://youtu.be/WrTxNm3xdYM)
+
 This is building on the [previous tutorial](../6__GMGCv1_FAA/README.md) and the
 first two steps are repeated.
 
