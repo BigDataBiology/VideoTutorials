@@ -61,4 +61,4 @@ All the unigenes in GMGCv1 come with [eggnog-mapper](https://eggnog-mapper.embl.
 
 What is [argNorm](https://argnorm.readthedocs.io/en/latest/) and how to use it? 
 
-[[More information](tree/main/8__argNorm))
+[[More information](tree/main/8__argNorm)]
