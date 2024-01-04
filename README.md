@@ -56,3 +56,9 @@ but it's pretty easy to generate amino acid ones and here we show how.
 All the unigenes in GMGCv1 come with [eggnog-mapper](https://eggnog-mapper.embl.de/) annotations. Here, we show how to retrieve them.
 
 [[More information](tree/main/7__GMGCv1_Emapper)]
+
+## 8. argNorm
+
+What is [argNorm](https://argnorm.readthedocs.io/en/latest/) and how to use it? 
+
+[[More information](tree/main/8__argNorm)]
