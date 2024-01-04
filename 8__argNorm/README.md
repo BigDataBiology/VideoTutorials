@@ -1,6 +1,6 @@
 # argNorm Tutorial
 
-Video:
+Video: https://youtu.be/vx8MCQ7gDLs
 
 **argNorm is a tool to normalize antibiotic resistance genes (ARGs) by mapping them to the
 [antibiotic resistance ontology (ARO)](https://obofoundry.org/ontology/aro.html) by CARD. It also provides drug categorization of drugs that antibiotic resistance genes confer resistance to.**
@@ -57,3 +57,16 @@ argnorm abricate --db argannot -i examples\raw\abricate.argannot.tsv -o abricate
 # raw resfinder orfs file
 argnorm resfinder -i examples\raw\resfinder.resfinder.orfs.tsv -o resfinder.resfinder.raw.normalized.tsv
 ```
+
+## References
+
+argNorm: https://github.com/BigDataBiology/argNorm
+
+EMBARK: https://antimicrobialresistance.eu/mission/
+
+[CARD](https://card.mcmaster.ca/):
+> Alcock, B., Huynh, W., Chalil, R., Smith, K. W., Raphenya, A. R., Wlodarski, M. A., Edalatmand, A., Petkau, A.,
+Syed, S. A., Tsang, K. K., Baker, S. J. C., Dave, M., McCarthy, M. C., Mukiri, K. M., Nasir, J. A., Golbon, B., Imtiaz,
+H., Jiang, X., Kaur, K., . . . McArthur, A. G. (2022). CARD 2023: expanded curation, support for machine learning, and
+resistome prediction at the Comprehensive Antibiotic Resistance Database.
+Nucleic Acids Research, 51(D1), D690–D699. https://doi.org/10.1093/nar/gkac920
