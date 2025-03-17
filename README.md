@@ -41,8 +41,6 @@ This likely makes the most sense if you've seen the first tutorial.
 Motivated by a subscriber question about GMGCv1, this is actually a general
 question about using pandas and Python to deal with very huge tables.
 
-[[More information](tree/main/5__SelectGMGCAbundances)]
-
 ### 6. How to obtain amino acids version of GMGCv1 subcatalogs
 
 Another subscriber question about GMGCv1, namely how to get amino acid versions
@@ -62,3 +60,7 @@ All the unigenes in GMGCv1 come with [eggnog-mapper](https://eggnog-mapper.embl.
 What is [argNorm](https://argnorm.readthedocs.io/en/latest/) and how to use it? 
 
 [[More information](tree/main/8__argNorm)]
+
+## 9. Installing SemiBin using Pixi (including with GPU support)
+
+How to use [Pixi](https://pixi.sh/) to install [SemiBin](https://semibin.rtfd.io/), including with GPU support.
